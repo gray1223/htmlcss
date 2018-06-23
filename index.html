@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- This is a comment.  It is not read by the editor. -->
+<html lang="en" dir="ltr">
+  <head> <!--The head section is used for SEO and linking other documents to this HTML -->
+    <meta charset="utf-8">
+
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet" />
+    <!--
+      This is the link to the reset.css stylesheet. reset.css resets a browsers
+      default style settings and tells it to start fresh with your css code in style.css
+    -->
+
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet" />
+    <!--
+      This <link> property links your style.css to your HTML. Without this important
+      property, your webpage is not affected and the css will NOT render. By  telling
+      it type="text/css"  you are telling the browser to "expect" text/css. By calling
+      rel="stylesheet"  you are telling it how to read the sheet. The more information
+      you give the browser the better!
+    -->
+
+    <title>My Webpage Title</title> <!-- This is what is in the top of the browser, in the tab. -->
+  </head>
+  <body>
+    <div class="navigation"> <!-- Not necessary -->
+      <header> <!-- The whole top bar, there is also a <footer> property -->
+        <nav> <!-- This tells the browser this is a menu or navigation "list" -->
+          <a href="#"><li>Home</li></a> <!-- <li> is used with lists. In this case, navigation. -->
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Contact Us</li></a>
+          <!-- <a> is used with links. If there was a link, the href would point
+          to a URL or file path. -->
+        </nav>
+      </header>
+    </div>
+
+
+    <div class="site-container">
+
+      <div class="title-section"> <!-- Parent container, background image here -->
+        <div class="jumbotron"> <!-- Parent to the .jumbotron-content class -->
+          <div class="jumbotron-content">
+            <h1>Demonstration Website Home</h1> <!-- h1 doesn't matter, I set the size in CSS -->
+            <h2>
+              This is the jumbotron! It is nice and centered, over a stunning
+              air-to-air kill in War Thunder! Yay History!
+            </h2>
+            </div>
+          </div>
+        </div>
+
+      <div class="site">
+        <div class="objects">
+          <div class="object">
+            <!--
+              I like to use the plural-singlar (my name for it) organization with
+              HTML. Basically, if you want rows and columns of objects, I use
+              a <div> with class="plural-object" and a class for the child div
+              of class="singular-object". If you look at my code, you see each of
+              the three objects has the same structure, I copied and pasted the first
+              one. I can style the .objects into a row and each .object into a column,
+              so you end up with three boxes here in a row with their title and information
+              in vertical "column" information
+            -->
+            <div class="object-title"> <!-- Object title, see the rendered page -->
+              <h1>Object 1</h1>
+            </div>
+            <div class="object-information"> <!-- The sentence -->
+              <h3>This is the first of three objects, in a row, equally spaced!</h3>
+            </div>
+          </div>
+          <div class="object"> <!-- x2 -->
+            <div class="object-title">
+              <h1>Object 2</h1>
+            </div>
+            <div class="object-information">
+              <h3>This is the second of three objects, in a row, equally spaced!</h3>
+            </div>
+          </div>
+          <div class="object"> <!-- x3 -->
+            <div class="object-title">
+              <h1>Object 3</h1>
+            </div>
+            <div class="object-information">
+              <h3>This is the third of three objects, in a row, equally spaced!</h3>
+            </div>
+          </div>
+        </div>
+      </div> <!-- All these divs just close up the section from the top. Try clicking one, and see which up there it underlines! -->
+    </div>
+  </body>
+</html>

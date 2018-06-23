@@ -1,0 +1,121 @@
+
+
+html {
+  font-size: 2vh;
+  font-family: sans-serif;
+  text-align: center; /* This sets the whole page html to be centered, unless overrulled later. */
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 8vh; /* Height is 8% of the viewport height, sort of */
+  justify-content: left; /* Puts content on left instead of center */
+  display: flex; /* Defines the element layout as flexbox */
+  background-color: darkgray;
+  border-bottom: 3px solid white; /* border: weight type color; */
+  align-items: center; /* Flexbox property that defines vertical positioning in a flexbox. */
+  color: white;
+  position: fixed; /* Attaches the header to the top of the page, regardless of scrolling */
+}
+
+nav {
+  display: flex;
+  flex-direction: row; /* Tells the nav parent to layout its children in row */
+}
+
+a {
+  text-decoration: none; /* Revmoves the link underline, sets it to white instead of blue */
+  color: white;
+}
+
+a:hover {
+  color: orange; /* Psudo class for mouse hover */
+}
+
+nav li {
+  display: flex;
+  flex-direction: row; /* Not necessary, but just making sure */
+  width: 7vw;
+  margin: auto 2vw; /* margin: top right bottom left; or margin: top/bottom left/right; */
+  font-size: 2.2vh;
+}
+
+nav li:first-child {
+  margin-left: 5vw; /* First in the list more margin-left to align with page content */
+}
+
+/* Title */
+
+.title-section {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  background-image: url("../images/fw190kill.png"); /* Relative path */
+  background-position: center;
+  background-repeat: no-repeat; /* stops the default "boxing" pattern of repeating backgrounds */
+  background-size: cover;
+  justify-content: center;
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.5); /* rgb color values with a, for transparency */
+  border: 3px solid black;
+  border-radius: 5px; /* amount of curve */
+  display: flex;
+  justify-content: center; /* Positions elements centered horizontally inside the jumbotron */
+  align-items: center; /* Positions elements centered vertically inside the jumbotron */
+  width: 40vw;
+  height: 25vh;
+  margin-top: 25vh;
+  color: white;
+}
+
+.jumbotron-content {
+  padding: 2vh;
+}
+
+.jumbotron-content h1 {
+  font-size: 6vh;
+  margin: 2vh auto; /* Puts 2vh vertical spacing on both top and bottom and auto (centered) horizontal margin. */
+}
+
+.jumbotron-content h2 {
+  font-size: 2vh;
+  margin-bottom: 3vh;
+  line-height: 1.3;
+}
+
+.site-container {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.site {
+  background-color: darkgray; /* Lower section's background color */
+}
+
+.objects {
+  display: flex;
+  flex-direction: row; /* As explained on left, puts object individual <div>s into a row */
+  height: 40vh;
+  justify-content: center;
+}
+
+.object {
+  display: flex;
+  flex-direction: column; /* Puts the content in each object in vertical alignment */
+  padding: 1vw;
+  background-color: white;
+  margin: 2vw;
+}
+
+.object h1 {
+  font-size: 4vh;
+  margin: 1.5vh auto;
+}
+
+.object h3 {
+  font-size: 2vh;
+}
